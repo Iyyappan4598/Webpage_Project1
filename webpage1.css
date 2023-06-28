@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+h4{
+    color: white;
+    font-size: 17px;
+}
+nav{
+    /* background-color: darkorange; */
+    display: grid;
+    place-items: center;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 20px;
+    transition: 0.2s ease-in;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+nav ul li a:hover{
+    background-color: red;
+    color: white;
+}
+
+
+/* @media screen and (max-width: 800px){
+    nav {
+      background-color: lightcoral;
+    }
+}
+@media screen and (max-width: 500px){
+    nav ul li a {
+        background-color: darkorange;
+      color: darkorange;
+      display: block;    
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+} */
+body{
+    /* background: linear-gradient(rgba(245 245 250 / 50%), rgba(245 242 244 / 50%)), url(../Webpage1/Asset/Foodbg.webp); */
+    background-color: #262222;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    gap: 40px;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+h4{
+    padding: 5px;
+    text-align: center;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.item button:hover{
+    transform: scale(1.08);
+}
+#button1{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+#button1:hover{
+    transform: scale(1.08);
+}
+@media (max-width:1000px) {
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:500px) {
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#footbar a {
+    display: block;
+    /* background-color: darkorange; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #footbar a:hover {
+    background: red;
+    color: white;
+  }
+
+  .food-order{
+    display: flex;
+  }
